@@ -25,20 +25,22 @@ docker run --rm 400hw3          # Python image
 
 ## Structure of the repo
 
+```text
 hw3/
 ├── Dockerfile                  # Dockerfile for python image
-├── Homework 3.ipynb            # HW instruction in case of further needs 
-├── .dockerignore                
+├── Homework 3.ipynb            # HW instruction in case of further needs
+├── .dockerignore
 ├── .gitignore
 ├── data/                       # data downloaded from kaggle
-    ├── train.csv
-    ├── test.csv
-    ├── gender_submission.csv
+│   ├── train.csv
+│   ├── test.csv
+│   └── gender_submission.csv
 └── src/
-    ├── scripts/                # main.py, requirements.txt
-        └── main.py             # main pipeline for python logistic regression
-        └── requirements.txt    # python package requirement
+    ├── scripts/
+    │   ├── main.py             # main pipeline for python logistic regression
+    │   └── requirements.txt    # python package requirement
     └── rscripts/
         ├── Dockerfile          # dockerfile for R image
-        └── main.R              # main pipeline for R pipeline
+        ├── main.R              # main pipeline for R pipeline
         └── install_packages.R  # Script to install necessary packages to the container
+```
